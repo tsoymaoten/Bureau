@@ -342,9 +342,9 @@ newPaybar: {
   },
   userCardNumber: 'Card number',
   cardSwitch: {
-    heading: 'Оплата',
-    existingCard: 'Картой %{userCardNumber}',
-    newCard: 'Другой картой',
+    heading: 'Pay by',
+    existingCard: 'Bank card %{userCardNumber}',
+    newCard: 'Other card',
   },
   launchpad: {
     book: 'Read now',
