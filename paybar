@@ -1,0 +1,381 @@
+subscription: {
+  subscription: 'Subscription',
+  preorder: 'Preorder',
+  defaultUnits_1: '$/y',
+  defaultUnits_1Discount: '$',
+  defaultUnits_12: '$',
+  defaultUnits_12Discount: '$',
+  subscriptionUnits_1: '$/y',
+  subscriptionUnits_12: '$/y',
+  prices: {
+    purchaseLabel: 'Price',
+    defaultLabel_1: 'The first year',
+    defaultLabel_1Discount: 'За первые три месяца',
+    defaultLabel_12: 'The first year',
+    defaultLabel_12Discount: 'The first year',
+    subscriptionLabel_1: 'С четвёртого',
+    subscriptionLabel_12: 'Consecutive years',
+    upgradeLabel: 'Переключение',
+    upgradeSubscriptionLabel: 'Подписка',
+  },
+  specialOffer: 'Спецпредложение',
+  upgradeTitle: {
+    one: 'Подписчикам на %{count} отдельную книгу',
+    few: 'Подписчикам на %{count} отдельные книги',
+    many: 'Подписчикам на 3 и более отдельные книги',
+  },
+  subscriptionUpgrade: {
+    one: 'Переключите свою действующую подписку на «%{shelfName}». Предыдущая подписка на книгу отменится автоматически.',
+    few: 'Переключите свою действующую подписку на «%{shelfName}». Предыдущая подписка на книги отменится автоматически.',
+    many: 'Переключите свою действующую подписку на «%{shelfName}». Предыдущая подписка на книги отменится автоматически.',
+  },
+  previousSubscriptionCanceled: {
+    one: 'Предыдущая подписка на книгу %{books} отменена.',
+    few: 'Предыдущая подписка на книги %{books} отменена.',
+    many: 'Предыдущая подписка на книги %{books} отменена.',
+  },
+},
+
+emailForm: {
+  placeholder: 'Email',
+  authenticationEmailSent: 'По адресу <b>%{email}</b> отправлена ссылка на вашу личную страницу',
+},
+
+newPaybar: {
+  emailNotices: {
+    default: {
+      self: 'Email address for accessing the book. If you’ve already subscribed to our books, use the same address<span class="device mobile">:</span>',
+      upgrade: 'Адрес, к которому хотите привязать покупку. Если у вас есть Бюросфера с другими покупками, используйте адрес оттуда<span class="device mobile">:</span>',
+      gift: 'The email address of the payer. If you already paid for our books, use the same address<span class="device mobile">:</span>',
+    },
+    bookshelf: {
+      hasSubscription: 'У вас уже есть подписка. По адресу <b>%{email}</b> отправлена ссылка для доступа к полке',
+      hasBureausphere: 'По адресу <b>%{email}</b> отправлена ссылка для оформления подписки',
+    },
+    book: {
+      hasSubscription: 'You already have this book. A link to access the book has been sent to <b>%{email}</b>',
+      hasSubscriptionCannotRead: 'You already have this book. We’ll send an email to <b>%{email}</b> when the book is out',
+      hasBureausphere: 'A link to subscribe to the book has been sent to <b>%{email}</b>',
+      hasBureausphereCannotRead: 'A link to subscribe to the book has been sent to <b>%{email}</b>',
+    },
+    prep: {
+      hasSubscription: 'Вы уже записались на подготовительные курсы. По адресу <b>%{email}</b> отправлена ссылка для доступа к Кабинету',
+      hasBureausphere: 'По адресу <b>%{email}</b> отправлена ссылка для записи на подготовительные курсы',
+    },
+  },
+  priceLabel: {
+    bookshelf: {
+      gift_1: 'На три месяца',
+      gift_12: 'For one year',
+    },
+    book: {
+      gift_1: 'На три месяца',
+      gift_12: 'For one year',
+    },
+  },
+  devices: {
+    book: {
+      default: 'Computer<br class="device laptop desktop" />and tablet',
+      hasMobileVersion: 'Computer,<br class="device laptop desktop" /> tablet<br /> <span class="is__colored">and phone</span>',
+    },
+    bookshelf: {
+      default: 'Компьютер<br class="device laptop desktop" /> и планшет',
+      hasMobileVersion: 'Компьютер,<br class="device laptop desktop" /> планшет<br /> <span class="is__colored">и телефон</span>',
+    },
+  },
+  requirements: {
+    book: {
+      default: 'You will need a computer or tablet with internet connection and any modern browser. We recommend using Retina displays to read the book',
+      hasMobileVersion: 'You will need a computer, tablet or phone with internet connection and any modern browser. We recommend using Retina displays to read the book',
+    },
+    bookshelf: {
+      default: 'You will need a computer or tablet with internet connection and any modern browser. We recommend using Retina displays to read the book',
+      hasMobileVersion: 'You will need a computer, tablet or phone with internet connection and any modern browser. We recommend using Retina displays to read the book',
+    },
+    prep: { default: 'Для прохождения подготовительных курсов нужен компьютер, планшет или телефон с интернетом и любым современным браузером' },
+  },
+  hasMobileVersion: {
+    single: 'Now the book “%{bookTitle}” has a mobile version',
+    many: 'Books with a mobile version are marked this way',
+  },
+  subscriptionStatus: {
+    book: '<b>Next payment</b> <br class="device laptop desktop" />%{date} — %{price} ₽',
+    bookshelf: '<b>Следующий платёж</b> <br class="device laptop desktop" />%{date} — %{price} ₽',
+    gift: {
+      book: 'Подписка действует <br class="device laptop desktop" /> <b>до %{date}</b>',
+      bookshelf: 'Подписка действует <br class="device laptop desktop" /> <b>до %{date}</b>',
+    },
+  },
+  cardIframe: {
+    title: 'Pay<span class="device desktop laptop"> by</span> bank</span> card',
+    cvvHelp: 'CVC 2 / CVV 2 — three last digits on the back side',
+    paytureHelp: 'The card data will be stored on Payture secure payment server. Bureau Gorbunov does not store your card data.',
+  },
+  anotherEmail: 'It’s not me',
+  imNotUserName: 'It’s not me',
+  changeCard: 'Update',
+  newCardCaption: 'Previous bank card data will be automatically deleted',
+  payerName: 'Full name',
+  gift: {
+    payerName: 'Your full name',
+    presentee: 'Gift recepient',
+    presenteeName: 'Name',
+    presenteeEmail: 'Email',
+  },
+  submitButtonCaption: {
+    book: {
+      self: 'Your card <br class="device mobile"/>will be charged',
+      selfWithPreorder: '<span class="device mobile">Preorder. </span>Your card <br class="device mobile"/>will be charged',
+      gift: 'Your card <br class="device mobile"/>will be charged',
+      giftWithPreorder: 'Preorder. Your card <br class="device mobile"/>will be charged',
+    },
+    bookshelf: {
+      self: 'Деньги спишутся <br class="device mobile"/>с карты',
+      gift: 'Деньги спишутся <br class="device mobile"/>с карты',
+      upgrade: 'Деньги спишутся <br class="device mobile"/>с карты',
+    },
+    prep: {
+      self: 'Деньги спишутся <br class="device mobile"/>с карты',
+      gift: 'Деньги спишутся <br class="device mobile"/>с карты',
+    },
+  },
+  submitButtonText: {
+    book: {
+      self: 'Subscribe for',
+      selfWithPreorder: 'Preorder for',
+      gift: 'Make a gift for',
+      giftWithPreorder: 'Make a gift for'',
+    },
+    bookshelf: {
+      gift: 'Подарить за',
+      self: 'Подписаться за',
+      upgrade: 'Переключить за',
+    },
+    prep: {
+      self: 'Записаться за',
+      gift: 'Подарить за',
+    },
+  },
+  giftButtonText: 'Подарок',
+  moreButtonText: {
+    book: 'Subscribe someone else...',
+    bookshelf: 'Подписать кого-то ещё...',
+    prep: 'Записать <span class="device laptop desktop">кого-то </span>ещё...',
+  },
+  success: {
+    book: {
+      gift: '✓ Subscription complete',
+      self: '✓ Subscribed',
+    },
+    bookshelf: {
+      gift: '✓ Подписка оформлена',
+      self: '✓ Вы подписаны',
+    },
+    prep: {
+      self: '✓ Вы записаны',
+      gift: '✓ Подарок оформлен',
+    },
+  },
+  successCaption: {
+    book: 'The subscription is renewed <br class="device desktop laptop"/>automatically',
+    bookWithPreorder: 'The subscription isn’t ticking yet <a class="is__noUnderline newPaybar-help" href="/books/faq/#ticking"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21"><path d="M8.757 15.286a1.127 1.127 0 0 0 1.05 1.029 1.271 1.271 0 0 0 1.239-1.155A1.115 1.115 0 0 0 10 14.089a1.294 1.294 0 0 0-1.239 1.2m-.8-9.807l.567.924a3.453 3.453 0 0 1 2.247-.987 1.33 1.33 0 0 1 1.512 1.428c0 1.407-2.1 2.184-2.814 3.129a3.271 3.271 0 0 0-.189 2.436h.987a2.71 2.71 0 0 1 .5-2.142c.8-.756 2.94-1.869 2.94-3.57 0-1.638-1.092-2.478-2.751-2.478a3.987 3.987 0 0 0-3 1.26" /><path d="M10.5 21A10.5 10.5 0 1 1 21 10.5 10.512 10.512 0 0 1 10.5 21zm0-20a9.5 9.5 0 1 0 9.5 9.5A9.511 9.511 0 0 0 10.5 1z" opacity=".5" class="semitransparent"/></svg></a> <br>We’ll send an email when the book is out',
+    bookWithPreorderCannotRead: 'The subscription isn’t ticking yet <a class="is__noUnderline newPaybar-help" href="/books/faq/#ticking"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21"><path d="M8.757 15.286a1.127 1.127 0 0 0 1.05 1.029 1.271 1.271 0 0 0 1.239-1.155A1.115 1.115 0 0 0 10 14.089a1.294 1.294 0 0 0-1.239 1.2m-.8-9.807l.567.924a3.453 3.453 0 0 1 2.247-.987 1.33 1.33 0 0 1 1.512 1.428c0 1.407-2.1 2.184-2.814 3.129a3.271 3.271 0 0 0-.189 2.436h.987a2.71 2.71 0 0 1 .5-2.142c.8-.756 2.94-1.869 2.94-3.57 0-1.638-1.092-2.478-2.751-2.478a3.987 3.987 0 0 0-3 1.26" /><path d="M10.5 21A10.5 10.5 0 1 1 21 10.5 10.512 10.512 0 0 1 10.5 21zm0-20a9.5 9.5 0 1 0 9.5 9.5A9.511 9.511 0 0 0 10.5 1z" opacity=".5" class="semitransparent"/></svg></a> <br>We’ll send an email when the book is out',
+    bookshelf: 'Подписка продлевается <br class="device desktop laptop"/>автоматически',
+    bookshelfWithPreorder: 'Подписка пока не тикает <a class="is__noUnderline newPaybar-help" href="/books/faq/#ticking"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21"><path d="M8.757 15.286a1.127 1.127 0 0 0 1.05 1.029 1.271 1.271 0 0 0 1.239-1.155A1.115 1.115 0 0 0 10 14.089a1.294 1.294 0 0 0-1.239 1.2m-.8-9.807l.567.924a3.453 3.453 0 0 1 2.247-.987 1.33 1.33 0 0 1 1.512 1.428c0 1.407-2.1 2.184-2.814 3.129a3.271 3.271 0 0 0-.189 2.436h.987a2.71 2.71 0 0 1 .5-2.142c.8-.756 2.94-1.869 2.94-3.57 0-1.638-1.092-2.478-2.751-2.478a3.987 3.987 0 0 0-3 1.26" /><path d="M10.5 21A10.5 10.5 0 1 1 21 10.5 10.512 10.512 0 0 1 10.5 21zm0-20a9.5 9.5 0 1 0 9.5 9.5A9.511 9.511 0 0 0 10.5 1z" opacity=".5" class="semitransparent"/></svg></a> <br>Мы напишем, когда книги выйдут',
+  },
+  tabs: {
+    bookshelf: {
+      self: 'Себе',
+      mobileSelf: 'Подписка себе',
+      gift: 'В подарок',
+      upgrade: 'Спецпредложение',
+    },
+    book: {
+      self: 'For yourself',
+      mobileSelf: 'For yourself',
+      gift: 'As a gift',
+    },
+    prep: {
+      self: 'Себе',
+      mobileSelf: 'Себе',
+      gift: 'В подарок',
+    },
+  },
+  pricingInfo: {
+    subscription_1: {
+      book: {
+        self: 'Подписка минимум на три месяца.<br/>Продлевается автоматически<span class="device mobile">.</span>',
+        selfWithPreorder: 'Подписка минимум на три месяца, продлевается <br class="device laptop desktop" />автоматически. При предзаказе месяц <span class="is__colored">в подарок<span class="device mobile">.</span></span>',
+        gift: 'Без дополнительных списаний.<br/>Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу.',
+        giftWithPreorder: 'Без дополнительных списаний.<br/>Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу.',
+      },
+      bookshelf: {
+        self: 'Подписка минимум на три месяца.<br/>Продлевается автоматически<span class="device mobile">.</span>',
+        gift: 'Без дополнительных списаний.<br/>Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу.',
+        upgrade: 'Подписка продлевается автоматически<span class="device mobile">.</span>',
+      },
+    },
+    subscription_12: {
+      book: {
+        self: 'Minimal subscription is 1 year.<br/>Renews automatically<span class="device mobile">.</span>',
+        selfWithPreorder: 'Minimal subscription is 1 year. Renews <br class="device laptop desktop" />automatically. Preorder to get <span class="is__colored">extra 2 months free<span class="device mobile">.</span></span>',
+        gift: 'No further payments for you.<br/>The recipient will be able to use their own card to renew the subscription at the lowered rate of $9/year',
+        giftWithPreorder: 'No further payments for you.<br/>The recipient will be able to use their own card to renew the subscription at the lowered rate of $9/year',
+      },
+      bookshelf: {
+        self: 'Подписка минимум на год.<br/>Продлевается автоматически<span class="device mobile">.</span>',
+        gift: 'Без дополнительных списаний.<br/>Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу %{price} ₽/год<span class="device mobile">.</span>',
+        upgrade: 'Подписка продлевается автоматически<span class="device mobile">.</span>',
+      },
+    },
+    prep: {
+      self: '<span class="highlighted">🕑 Цена повышается каждую неделю. </span> <br/>Раньше занятия — ниже цена и выше балл',
+      gift: '<span class="highlighted">🕑 Цена повышается каждую неделю. </span> <br/>Раньше занятия — ниже цена и выше балл',
+      coupon: '<span class="highlighted">🕑 До %{couponEndDate} </span> <br/>Раньше занятия — ниже цена и выше балл',
+    },
+  },
+  giftMessage: {
+    bookshelf: {
+      subscription_1: 'Без дополнительных списаний. Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу',
+      subscription_12: 'No further payments for you.<br/>The recipient will be able to use their own card to renew the subscription at the lowered rate of $ %{price}/year',
+    },
+    book: {
+      subscription_1: 'Без дополнительных списаний. Получатель подарка сможет привязать карту и продлить подписку по сниженному тарифу',
+      subscription_12: 'No further payments for you.<br/>The recipient will be able to use their own card to renew the subscription at the lowered rate of $ %{price}/year',
+    },
+  },
+  successScreen: {
+    book: {
+      self: {
+        heading: 'Subscription complete',
+        headingWithPreorder: 'Preorder complete',
+        access: 'Read now',
+        accessText: 'A link to access the book has been sent to <b>%{email}</b><br/>',
+        accessTextCannotRead: 'We’ll send an email to <b>%{email}</b>,<br/>when the book is out',
+        text: 'Деньги списаны с вашей карты',
+      },
+      gift: {
+        heading: 'Gift subscription complete',
+        headingWithPreorder: 'Gift subscription preorder complete',
+        accessText: 'A link to access the book has been sent<br/>to <b>%{presenteeEmail}</b>',
+        accessTextCannotRead: 'An email about the gift has been sent<br/>to <b>%{presenteeEmail}</b>',
+        text: 'Your bank card has been charged',
+      },
+    },
+    bookshelf: {
+      self: {
+        heading: 'Подписка оформлена',
+        access: 'Читать',
+        accessText: 'По адресу <b>%{email}</b><br/>отправлена ссылка для доступа к полке',
+        text: 'Деньги списаны с вашей карты',
+      },
+      gift: {
+        heading: 'Подписка в подарок оформлена',
+        accessText: 'По адресу <b>%{presenteeEmail}</b><br/>отправлена ссылка для доступа к полке',
+        text: 'Деньги списаны с вашей карты',
+      },
+      upgrade: {
+        heading: 'Подписка переключена',
+        text: 'Деньги списаны с вашей карты',
+        accessText: 'По адресу <b>%{email}</b><br/>отправлена ссылка для доступа к полке',
+      },
+    },
+    prep: {
+      self: {
+        heading: 'Вы записались на подготовительные курсы',
+        access: 'Начать <span class="device laptop desktop">занятия </span><span class="is__hiddenOnNarrowMobile">сейчас</span>',
+        accessText: 'По адресу <b>%{email}</b> отправлена ссылка <br class="device desktop laptop"/>для доступа к Кабинету. Начните занятия до %{date} года',
+        text: 'Деньги списаны с вашей карты',
+        textWithDate: 'Деньги списаны с вашей карты. Начните занятия до %{date} года',
+      },
+      gift: {
+        heading: 'Вы подарили подготовительные курсы',
+        accessText: 'По адресу <b>%{email}</b> отправлена ссылка для доступа к Кабинету.<br />Тот, кому вы дарите, сможет начать занятия до %{date} года',
+        text: 'Деньги списаны с вашей карты',
+      },
+    },
+    close: 'Close',
+    lock: '🔓',
+  },
+  title: {
+    book: {
+      gift: 'Подписка в подарок <span class="device mobile">на электронную книгу <small>%{productTitle}</small></span>',
+      self: 'Подписка <span class="device mobile">на электронную книгу <small>%{productTitle}</small></span>',
+    },
+    bookshelf: {
+      gift: 'Подписка в подарок <span class="device mobile">на электронную полку <small>%{productTitle}</small></span>',
+      self: 'Подписка <span class="device mobile">на электронную полку <small>%{productTitle}</small></span>',
+      upgrade: 'Подписка на электронную полку <small class="module device mobile">%{productTitle}</small>',
+    },
+    prep: {
+      self: 'Запись на подготовительные курсы',
+      gift: 'Запись на подготовительные курсы в подарок',
+    },
+  },
+  links: {
+    license: 'License',
+    unsubscription: 'Cancel subscription',
+    offer: 'Оферта и договор',
+  },
+  notice: {
+    bookshelf: {
+      emailSent: {
+        text: 'По адресу <b>%{email}</b> отправлена ссылка для доступа к книге',
+        buttonText: 'Отправить снова',
+      },
+    },
+    book: {
+      emailSent: {
+        text: 'A link to access the book has been sent to <b>%{email}</b>',
+        textCannotRead: 'We’ll send an email to <b>%{email}</b> when the book is out',
+        buttonText: 'Send again',
+      },
+    },
+    prep: {
+      emailSent: {
+        text: 'По адресу <b>%{email}</b> отправлена ссылка для доступа к Кабинету',
+        buttonText: 'Отправить снова',
+      },
+    },
+    paymentFailed: '<b>Оплата не прошла.</b> Попробуйте снова или введите данные другой банковской карты',
+    paymentFailedAmountExceed: '<b>Недостаточно средств.</b> Введите данные другой банковской карты',
+  },
+  userCardNumber: 'Card number',
+  cardSwitch: {
+    heading: 'Оплата',
+    existingCard: 'Картой %{userCardNumber}',
+    newCard: 'Другой картой',
+  },
+  launchpad: {
+    book: 'Read now',
+    prep: 'Учиться',
+  },
+  upgrade: {
+    titleStart: 'Подписчикам на ',
+    text: 'Переключите свою действующую подписку на «Учебники бюро». Предыдущая подписка на книгу отменится автоматически.',
+  },
+  specialPriceLabel: 'Low for subscribers',
+  specialPriceLiveLabel: 'Спеццена участникам трансляции',
+  ribbonNotReady: 'Soon',
+  prep: {
+    title: 'Подготовительные курсы',
+    subscriptionStudying: 'Занятия уже начались',
+    subscription: '<span>Начало — до %{date} года</span>',
+    caption: 'Начало — в любой удобный день. <br/>Длительность — три недели. <br/>Первый дедлайн — на седьмой день.',
+    launchpad: {
+      button: 'Начать занятия сейчас',
+      buttonStudying: 'Продолжить занятия',
+      caption: 'И немедленно начать отсчёт дедлайнов',
+      captionStudying: 'Ближайший дедлайн: <br class="device laptop desktop">%{deadline}, 23:59',
+    },
+  },
+},
+
+userPopup: {
+  loginToBureausphere: 'Sign in',
+  card: {
+    default: 'Bank card',
+    current: 'Bank card %{cardNumber}',
+    missing: '<span>Update <span class="is__hiddenOnNarrowMobile">bank </span>card</span>',
+  },
+},
