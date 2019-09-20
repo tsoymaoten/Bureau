@@ -252,7 +252,7 @@ newPaybar: {
         access: 'Read now',
         accessText: 'A link to access the book has been sent to <b>%{email}</b><br/>',
         accessTextCannotRead: 'We’ll send an email to <b>%{email}</b>,<br/>when the book is out',
-        text: 'Деньги списаны с вашей карты',
+        text: 'Your bank card has been charged',
       },
       gift: {
         heading: 'Gift subscription complete',
